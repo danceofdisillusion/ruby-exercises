@@ -1,11 +1,11 @@
 RSpec.describe 'sort_by pattern' do
-
+require "pry"
   it 'sorts alphabetically' do
     words = ["broccoli", "Carrots", "FISH", "Bacon", "candy"]
     transformed = []
     words.each do |word|
       transformed << [word.downcase, word]
-    end
+    end  
     transformed = transformed.sort
     sorted = []
     transformed.each do |sort_key, word|
@@ -14,7 +14,7 @@ RSpec.describe 'sort_by pattern' do
     expect(sorted).to eq(["Bacon", "broccoli", "candy", "Carrots", "FISH"])
   end
 
-  xit 'alphabetically by last letter' do
+  it 'alphabetically by last letter' do
     things = ["pill", "box", "glass", "water", "sponge"]
     transformed = []
     things.each do |thing|
