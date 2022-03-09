@@ -10,6 +10,7 @@ require_relative 'nesting'
 
 # The collection you're going to be using lives in ./nesting.rb and is called stores.
 # If you spot an error or want to make this exercise better, please let us know!
+Stufff
 
 
 RSpec.describe 'Advanced Nested Collections' do
